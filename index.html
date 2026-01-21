@@ -1,31 +1,95 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>class 1 code demo!!!
-    </title>
-        <style>
-            li{
-                color: red;
-            }
-        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 1 Lab - Polished & Accessible</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #121212;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #ffffff;
+            background-color: #1a252f;
+            padding: 40px 20px;
+            margin: 0;
+            text-align: center;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .question {
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            border-left: 8px solid;
+            font-weight: 500;
+        }
+
+        /* Optimized for even higher contrast (approx 10:1 to 12:1) */
+        .q1 { color: #002d5a; background-color: #e0f2f1; border-color: #003366; } /* Darker Navy */
+        .q2 { color: #114013; background-color: #f1f8e9; border-color: #1b5e20; } /* Forest Green */
+        .q3 { color: #6a0a3d; background-color: #fce4ec; border-color: #880e4f; } /* Deep Maroon */
+        .q4 { color: #310d5e; background-color: #f3e5f5; border-color: #4a148c; } /* Royal Purple */
+    </style>
 </head>
-
 <body>
-    <h1>Hi, let's learn about sematic html demo branching!!</h1>
-    <p>This is a paragrahg tag. Paragraphs are used to hold a body of text.</p>
-    <ul>
-        <li style="color: green">I organize lists of information with unordered or ordered lists</li>
-        <li>List items are used to store the informatin in a list</li>
-    </ul>
+
+    <header></header>
+
+    <main>
+        <h1>Class 1 Lab</h1>
+        <p class="question q1">1. What is your name?</p>
+        <p class="question q2">2. What city are you from?</p>
+        <p class="question q3">3. What is your favorite snack?</p>
+        <p class="question q4">4. Where is your dream vacation spot?</p>
+    </main>
+
+    <footer></footer>
+
     <script>
-        let user = prompt('What is your name?');
-        console.log('The user\'s name is' + user);
+        // Question 1
+        let name = prompt('What is your name?');
+        console.log('The user\'s name is: ' + name);
+        alert('Welcome to the lab, ' + name + '!');
 
-        let color = prompt('What is your favorite color?');
-        console.log('Your favorite color is:' + color);
+        // Question 2
+        let city = prompt('What city are you from?');
+        console.log('The user is from: ' + city);
+        alert('Nice! ' + city + ' sounds like a cool place, ' + name + '.');
 
-        alert('Hi there, ' + user + '. Your favorite color is ' + color);
+        // Question 3
+        let snack = prompt('What is your favorite snack?');
+        console.log('The user likes to eat: ' + snack);
+        alert(snack + '? Yummy and delicious!');
+
+        // Question 4
+        let destination = prompt('Where is your dream vacation spot?');
+        console.log('The user wants to travel to: ' + destination);
+        
+        // Final Output
+        alert('Greetings, ' + name + ' from ' + city + '! It is fun to imagine eating ' + snack + ' while relaxing in ' + destination + '.');
     </script>
+
 </body>
 </html>
